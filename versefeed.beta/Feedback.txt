@@ -1,0 +1,4 @@
+Feedback 
+-Please don't have secret keys in your setting file , i think thats dangerous since you own a public git repo. These can easily be hacked
+- Regarding creating personalized quizes for users , you can use django's inbuilt user model to first of all authenticate users then secondly to allow user to create a personal quiz with their own questions. So your user model is tied to quiz model.When the users wants to share the quiz , the quiz can be obtained from the database by use of a url which accessess the database to obtain the particular quiz. For example quiz 1 created by user lynn can be accessed on the url www.funquiz.com/lynn/quiz/1
+- 
